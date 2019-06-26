@@ -4,5 +4,8 @@ from django.shortcuts import render
 def welcome(request):
     return render(request, 'all-netpro4G/welcome.html')
 
+def home(request):
+    return render(request, 'all-netpro4G/home.html')
+
 
     

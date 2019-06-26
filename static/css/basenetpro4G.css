@@ -2,7 +2,12 @@ h1
 {
   color:blue;
   font-size: 90px;
+  font-family: 'B612 Mono', monospace;
 }
-a {
-text-align: center
+.image{
+  background-size: cover;
+}
+h3{
+  font-size: 15px;
+ margin-top:10px;
 }
