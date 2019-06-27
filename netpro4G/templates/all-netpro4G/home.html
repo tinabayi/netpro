@@ -1,5 +1,27 @@
-<p>NETPRO LTD is a private company registered in Rwanda and was established in 2017 by founder, CEO and entrepreneur, Seneza Olivier,
-        NETPRO Ltd (NetPro) is a leading 4G and fiber optic internet provider, integrated communications, business and technology solutions. In
-        partnership with global and backbone technology leaders, we deliver solutions to customers in 4G and Broadband Internet, ICT Solutions,
-        Security, Cloud Solutions, Web and Mobile App Development.
-        We deliver value through a combination of process excellence, quality frameworks and service delivery innovation.</p>
+{%extends 'all-netpro4G/base.html'%}
+{% block content %} 
+{{ block.super}}
+
+<div class="container">
+
+  <!-- Looping through post   -->
+  {% for post_item in post %}
+
+  <div class="row">
+    <!-- displaying post -->
+    <div class="col-md-12">
+      <h2 class="text-center"> {{ post_item.title }} </h2>
+      <h2 class="text-center"> {{ post_item.post }} </h2>
+    </div>
+
+  </div>
+
+  {% empty %}
+  <div class="row">
+    <h2 class="text-center">There No post_item Items</h2>
+  </div>
+  {% endfor %}
+
+</div>
+
+{% endblock %}
