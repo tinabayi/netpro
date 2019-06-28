@@ -1,0 +1,31 @@
+{%extends 'all-netpro4G/base.html'%}
+{% block content %} 
+{{ block.super}}
+
+<div class="container">
+
+  <!-- Looping through post   -->
+  {% for contact_item in contacts %}
+
+  <div class="row">
+    <!-- displaying post -->
+    <img src="https://www.pmctelecom.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/g/e/geemarc_marbella.jpg"
+    <div class="col-md-6">
+      <p> {{ contact_item.title }} </p>
+      <p> {{ contact_item.location }}</p>
+      <p> {{ contact_item.phone}} </p>
+      <p> {{ contact_item.email}} </p>
+      <p> {{ contact_item.website}}</p>
+    </div>
+   
+  </div>
+
+  {% empty %}
+  <div class="row">
+    <h2 class="text-center">There No post_item Items</h2>
+  
+  {% endfor %}
+</div>
+</div>
+
+{% endblock %}
