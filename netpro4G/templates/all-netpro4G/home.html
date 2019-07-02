@@ -2,19 +2,21 @@
 {% block content %} 
 {{ block.super}}
 
-<div class="container">
 
+  <div style=background-color:#E0CA3C;padding:100px;color:white>
+  <h1 style=text-align:center>About Us</h1>
+</div>
   <!-- Looping through post   -->
   {% for post_item in post %}
 
   <div class="row">
     <!-- displaying post -->
     <div class="col-md-4">
-      <p style="font-weight:bold "> {{ post_item.title }} </p>
-      <p style="font-family: monospace"> {{ post_item.post }} </p>
+      <p style="font-weight:bold;margin-left:200px; padding-top: 30px;font-size:20px"> {{ post_item.title }} </p><br>
+      <p style="margin-left: 150px;font-family: sans-serif;"> {{ post_item.post }} </p>
     </div>
     <div class="col-md-4">
-    <img src="{{ post_item.post_image.url }}"  style="margin-left: 150px" alt="Card image cap">
+    <img src="{{ post_item.post_image.url }}"style="height:350px; width:400px; padding-top: 30px;margin-left:350px" alt="Card image cap">
          
      </div>
   </div>
@@ -24,92 +26,5 @@
     <h2 class="text-center">There No post_item Items</h2>
   
   {% endfor %}
-  <div class="row" style="font-family: monospace">
-  <h3>Our vision, Mision & Core Values</h3>
-  <div class="col-md-4">
-  <h4> Vision</h4>
-  <p>
-  To be recognized as the best value added service provider 
-  to our highly valued customers.
-  </p>
-</div>
-<div class="col-md-4">
-    <h4>Mission</h4>
-<p>
-  To provide high quality ICT products and value 
-  added services to our target 
-  customers with the aim of making
-  customers work better and faster.
-    </p>
-  </div>
-  <div class="col-md-4">
-  <p>
-      Customer Delight – We strive to exceed our customers' expectations for bottom-line success.
-      Accountability – We make personal commitment to our customers, partners and staff and hold ourselves accountable for keeping this
-      promise.
-      Respect - We treat each other, our customers and our vendors with dignity, consideration, open-mindedness and respect everyone’s role in
-      achieving success. NetPro cultivates an environment of innovation and collaboration which pays off in the way we solve problems for our
-      customers.
-      Excellence - Getting it done right first time.
-      Our journey to excellence never ends, we take action with success in mind and focus on results, constantly finding new ways to innovate and
-      improve while evaluating our progress.
-      </p>
-    </div>
-    
-
-</div>
-
-<div class="row" style="font-family: monospace">
-<h3 style="text-align: center">Why Choose NetPro?</h3>
- <div class="col-md-3" > 
-  <h4>Network Availability Reliability</h4>
-  <p>We have designed our backbone network with the ability
-      to load balance two International independent gateway
-      providers thereby providing unmatched reliability. This
-      eliminates a single point of failure on bandwidth and the
-      backbone.</p>
-    </div>  
-
-<div class="col-md-3" > 
-    
-<h4>Guaranteed Backend By A Service Level
-    Agreement (SLA)</h4>
-<p>We have designed our backbone network with the ability
-    to load balance two International independent gateway
-    providers thereby providing unmatched reliability. This
-    eliminates a single point of failure on bandwidth and the
-    backbone.</p>
-  </div> 
-  <div class="col-md-3" > 
-    
-      <h4>INNOVATION</h4>
-      <p>We draw on rich heritage of enterprise communication
-          solutions and our mystery of new IP Based technologies
-          such as security and telephony.
-          This means that customers can integrate IP
-          Communications solutions with existing investments to
-          enhance and evolve their networks and communications
-          as their needs grow.</p>
-        </div> 
-        <div class="col-md-3" > 
-    
-            <h4>OUR PROMISE</h4>
-            <p>• We promise to provide fully redundant international
-                bandwidth through the fiber optic cable to guarantee
-                reliable communications free of delays and interference
-                at the most affordable rates.
-                • We promise to deliver innovative value added
-                solutions which we will be upgrading regularly as
-                technology evolves.
-                • We promise to invest in our people, our platforms and
-                partner ecosystem to bring the latest technologies
-                backed by expertise.
-                • We promise to back you up with the most responsive
-                customer service as we offer a holistic user experience
-                as good as any in the world.
-                Join us today. We’d love to serve you.</p>
-              </div>         
-
-</div>
 
 {% endblock %}

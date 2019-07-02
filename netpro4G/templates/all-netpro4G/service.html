@@ -1,0 +1,31 @@
+{%extends 'all-netpro4G/base.html'%}
+{% block content %} 
+{{ block.super}}
+
+
+  
+  <!-- Looping through post   -->
+  {% for post_item in services %}
+
+  <div class="row">
+    <!-- displaying post -->
+    <div class="col-md-4">
+      <h2 style="font-weight:bold;margin-left:200px; padding-top: 30px;font-size:20px"> {{ post_item.title }} </h2>
+      <ul>
+      <li style="margin-left: 150px;font-family: sans-serif;"> {{ post_item.service }}</li>
+    </ul>
+    </div>
+    <div class="col-md-4">
+    <img src="{{ post_item.image.url }}"style="height:350px; width:400px; padding-top: 30px;margin-left:350px" alt="Card image cap">
+         
+    
+  </div>
+ 
+</div>
+  {% empty %}
+  
+    <h2 class="text-center">There No post_item Items</h2>
+  
+  {% endfor %}
+
+{% endblock %}
