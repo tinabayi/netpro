@@ -2,11 +2,51 @@
 
 {% block content %}
 {{block.super}}
-<div style="background-color: #E0CA3C;padding: 60px" >
-<h1 class='text-center' style=font-size:70px;font-weight:bold;color:blue>NETPRO LTD</h1>
-<h3 class='text-center'  style=font-size:20px;font-weight:bold >The portal to the world wide</h3>
+
+<div style="background-color: beige;padding: 60px" >
+<div class="card" style="padding:10px;width: 50rem;margin-left: 300px; background-color: beige"> 
+<h1 class='text-center' style=font-size:70px;font-weight:bold;color:blue;border:1px >NETPRO LTD</h1>
+
+<h3 class='text-center'  style=font-size:25px;font-weight:bold >The portal to the world wide</h3>
+</div>
 </div>
 <div style="background-size: cover">
  <img src="https://cdn-s-www.estrepublicain.fr/images/63953769-9ED8-4B24-AC68-DD80B5781118/ERV_04/deploiement-de-la-fibre-optique-dans-divers-villages-1552577968.jpg"height=100% width=100%>
 </div>
+<h2 style="margin-left: 100px;font-size:30px;font-weight: bold">Why Choose NetPro?</h2>
+
+{% for post_item in welcomes %}
+
+  <div class="row">
+    <!-- displaying post -->
+   
+    <div  class="col-md-3" style="margin:40px;float:left">
+    <div class="card" style="padding:10px;width: 40rem; background-color:beige">  
+      <p class="card-title" style="font-weight:bold;margin-left:200px; padding-top: 30px;font-size:20px"> {{ post_item.title }} </p><br>
+      <p class="card-text" style="font-family: sans-serif;"> {{ post_item.welcome }} </p>
+   
+</div>
+</div>
+  {% empty %}
+  
+    <h2 class="text-center">There No post_item Items</h2>
+  
+    {% endfor %}
+
+
+
+  <div class="row">
+    <h2 style="margin-left: 100px">OUR PARTNERS</h2>
+    <div  class="col-md-4">
+        <img src="http://logo-load.com/uploads/posts/2016-03/1457880089_alcatel-logo.jpg" alt="image" height="90px" width="90px">
+    </div>
+    <div  class="col-md-4">
+    <img src="https://www.ansible.com/hs-fs/hubfs/2016_Images/Partners/cisco-logo2.png?width=290&name=cisco-logo2.png" alt="image" height="90px" width="90px">
+</div>
+<div  class="col-md-4">
+    <img src="https://newtelco.com/wp-content/uploads/2017/04/Huawei-logo.jpg" alt="image" height="90px"width="90px">
+</div>
+</div>
+
+
 {% endblock %}

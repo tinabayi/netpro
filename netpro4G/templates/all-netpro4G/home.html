@@ -6,25 +6,45 @@
   <div style=background-color:#E0CA3C;padding:100px;color:white>
   <h1 style=text-align:center>About Us</h1>
 </div>
-  <!-- Looping through post   -->
-  {% for post_item in post %}
+<div>
+  <img src="https://jclao.com/wp-content/uploads/2018/09/New-Internet-Service-Provider-To-Expand-Network.jpg" alt="image" height="800px" width="100%">
+</div>
+ 
 
-  <div class="row">
+  <div class="row" style= "margin-left:80px">
     <!-- displaying post -->
     <div class="col-md-4">
-      <p style="font-weight:bold;margin-left:200px; padding-top: 30px;font-size:20px"> {{ post_item.title }} </p><br>
-      <p style="margin-left: 150px;font-family: sans-serif;"> {{ post_item.post }} </p>
+      <h3>WHO WE ARE</h3>
+     <p>
+      NETPRO LTD is a private company registered in Rwanda and was established in 2017 by founder, CEO and entrepreneur, Seneza Olivier,
+      NETPRO Ltd (NetPro) is a leading 4G and fiber optic internet provider, integrated communications, business and technology solutions. In
+      partnership with global and backbone technology leaders, we deliver solutions to customers in 4G and Broadband Internet, ICT Solutions,
+      Security, Cloud Solutions, Web and Mobile App Development.
+      We deliver value through a combination of process excellence, quality frameworks and service delivery innovation.</p>
     </div>
     <div class="col-md-4">
-    <img src="{{ post_item.post_image.url }}"style="height:350px; width:400px; padding-top: 30px;margin-left:350px" alt="Card image cap">
-         
-     </div>
+        <h3>OUR VALUES</h3>
+        <p>Customer Delight – We strive to exceed our customers' expectations for bottom-line success.
+            Accountability – We make personal commitment to our customers, partners and staff and hold ourselves accountable for keeping this
+            promise.
+            Respect - We treat each other, our customers and our vendors with dignity, consideration, open-mindedness and respect everyone’s role in
+            achieving success. NetPro cultivates an environment of innovation and collaboration which pays off in the way we solve problems for our
+            customers.
+            Excellence - Getting it done right first time.
+            Our journey to excellence never ends, we take action with success in mind and focus on results, constantly finding new ways to innovate and
+            improve while evaluating our progress.</p>
+  </div>
+  <div class="col-md-4">
+      <h3>Our Vision</h3>
+      <p>To be recognized as the best value added service provider to our highly valued customers.</p>
+  </div>
+  <div class="col-md-4">
+      <h3>Our Mission</h3>
+      <p>To provide high quality ICT products and value added services to our target customers with the aim of making
+          customers work better and faster.</p>
+</div>
   </div>
 
-  {% empty %}
-  
-    <h2 class="text-center">There No post_item Items</h2>
-  
-  {% endfor %}
 
+  
 {% endblock %}
