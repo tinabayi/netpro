@@ -13,9 +13,9 @@
 
   {% block styles %}
     {% bootstrap_css %}
-    <link rel="stylesheet" href="{% static 'css/basenetpro4G.css' %}">
     <link href="https://fonts.googleapis.com/css?family=B612+Mono&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="{% static 'css/basenetpro4G.css' %}">
   {% endblock %}
 
 </head>
@@ -28,10 +28,7 @@
     
     {%endblock%}
 
-    {% block scripts %}
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     {% bootstrap_javascript %}
-    {% endblock %}
+    
     <footer style="background-color: #000F08"">
   <h2 style=color:white;font-weight:bold;margin-left:200px>HEAD OFFICE:</h2>
 
@@ -43,5 +40,10 @@
     <p style= color:white;margin-left:400px;font-size:30px;font-family:monospace;font-weight:bold>Thank you for working with Us!</p>
 
     </footer>
+    {% block scripts %}
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        {% bootstrap_javascript %}
+    {% endblock %}
 </body>
 </html>

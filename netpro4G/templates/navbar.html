@@ -4,20 +4,66 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+     
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+      </style>
+      
 </head>
 <body>
+    <div class="container"> 
 <nav class="navbar navbar-inverse" style="background-color: white;border:none;padding:10px">
  <a class="navbar-brand" href="{% url 'welcome' %}"><img src="https://www.brandcrowd.com/gallery/brands/pictures/picture1455031105948.jpg"height="90px" width="80px"></a>
   
   <div class="navbar-header" style= "padding:30px">
    <a class="navbar-brand" href="{% url 'welcome' %}"style=color:black>HOME</a>
        
-      <a class="navbar-brand" href="{% url 'home' %}"style=color:black>ABOUT US</a>
-      <a class="navbar-brand" href="{% url 'service' %}"style=color:black>SERVICES</a>
+    <a class="navbar-brand" href="{% url 'home' %}"style=color:black>ABOUT US</a>
+      <div class="dropdown navbar-brand">
+          <a  href="{% url 'service' %}"  style=color:black >SERVICES
+          <span class="caret"></span></a>
+          <div class="dropdown-content">
+            <a href="#">HTML</a>
+           
+            <a href="#">CSS</a>
+           
+            <a href="#">JavaScript</a>
+            <a href="#">Link 1</a>
+          </div>
+        </div>
+      <!-- <a class="navbar-brand" href="{% url 'service' %}"style=color:black>SERVICES</a> -->
       <a class="navbar-brand" href="{% url 'welcome' %}"style=color:black>PRODUCTS</a>
       <a class="navbar-brand" href="{% url 'contact' %}"style=color:black>CONTACT US</a>
 
   </div>
+  
 </nav>
+</div>
 </body>
 </html>
