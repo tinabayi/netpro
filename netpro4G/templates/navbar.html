@@ -37,28 +37,65 @@
       
 </head>
 <body>
-    <div class="container"> 
-<nav class="navbar navbar-inverse" style="background-color: white;border:none;padding:10px">
+<div class="container"> 
+<nav class="navbar navbar-inverse" style="background-color: white;border:none;padding:0px">
  <a class="navbar-brand" href="{% url 'welcome' %}"><img src="https://www.brandcrowd.com/gallery/brands/pictures/picture1455031105948.jpg"height="90px" width="80px"></a>
   
   <div class="navbar-header" style= "padding:30px">
    <a class="navbar-brand" href="{% url 'welcome' %}"style=color:black>HOME</a>
+
+   <div class="dropdown navbar-brand">
+    <a  href="{% url 'home' %}" style=color:black >ABOUT US
+    <span class="caret"></span></a>
+    <div class="dropdown-content">
+      <a href="#">WHO WE ARE</a>
+     
+      <a href="#">OUR VALUES</a>
+     
+      <a href="#">Our Vision</a>
+      <a href="#">Our Mission</a>
+    </div>
+  </div>
        
-    <a class="navbar-brand" href="{% url 'home' %}"style=color:black>ABOUT US</a>
+   
       <div class="dropdown navbar-brand">
           <a  href="{% url 'service' %}"  style=color:black >SERVICES
           <span class="caret"></span></a>
           <div class="dropdown-content">
-            <a href="#">HTML</a>
+            <a href="#">ENTERPRISE INFRASTRUCTURE
+              SERVICES</a>
            
-            <a href="#">CSS</a>
+            <a href="#">ENTERPRISE SERVICE</a>
            
-            <a href="#">JavaScript</a>
-            <a href="#">Link 1</a>
+            <a href="#">NETWORKING SERVICES</a>
+            <a href="#">OUTSOURCING & SERVICE CENTRE</a>
           </div>
         </div>
-      <!-- <a class="navbar-brand" href="{% url 'service' %}"style=color:black>SERVICES</a> -->
-      <a class="navbar-brand" href="{% url 'welcome' %}"style=color:black>PRODUCTS</a>
+      
+      <div class="dropdown navbar-brand">
+          <a  href="{% url 'service' %}"  style=color:black >OUR security solutions
+          <span class="caret"></span></a>
+          <div class="dropdown-content">
+            <a href="#">ADVANCED IP SURVEILLANCE SOLUTIONS </a>
+            <a href="#">NETWORK SECURITY</a>
+           
+            <a href="#">ACCESS CONTROL</a>
+            <a href="#">PROJECT MANAGEMENT</a>
+          </div>
+          </div>
+
+          <div class="dropdown navbar-brand">
+              <a  href="{% url 'service' %}"  style=color:black >PROJECTS
+              <span class="caret"></span></a>
+              <div class="dropdown-content">
+                <a href="#"> </a>
+                <a href="#"></a>
+               
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+              </div>
+       
       <a class="navbar-brand" href="{% url 'contact' %}"style=color:black>CONTACT US</a>
 
   </div>
@@ -66,4 +103,4 @@
 </nav>
 </div>
 </body>
-</html>
+</html> 
