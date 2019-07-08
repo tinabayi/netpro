@@ -1,6 +1,6 @@
 from django.http  import HttpResponse
 from django.shortcuts import render
-from .models import AboutUs,Contact,Service,Welcome
+from .models import AboutUs,Contact,Service,Welcome,Background
 # Create your views here.
 def welcome(request):
     welcomes =Welcome.get_welcome()
@@ -9,7 +9,12 @@ def welcome(request):
 def home(request):
     
     post =AboutUs.get_post()
-    return render(request, 'all-netpro4G/home.html', {"post":post})   
+    return render(request, 'all-netpro4G/home.html', {"post":post})
+
+def background(request):
+    
+    background = Background.get_background()
+    return render(request, 'all-netpro4G/background.html', {"background":background})   
 
 
 def contact(request):

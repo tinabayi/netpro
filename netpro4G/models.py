@@ -18,6 +18,17 @@ class AboutUs(models.Model):
         post = cls.objects.all();
         return post
 
+class Background(models.Model):
+    background = models.TextField( null=True)
+
+    def save_background(self):
+        self.save()
+    
+    @classmethod
+    def get_background(cls):
+        background = cls.objects.all();
+        return background        
+
 class Contact(models.Model):
     title = models.CharField(max_length =60,null=True)
     location = models.CharField(max_length =60,null=True)

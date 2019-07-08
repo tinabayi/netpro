@@ -1,8 +1,14 @@
 {%extends 'all-netpro4G/base.html'%}
 {% block content %} 
 {{ block.super}}
-
-
+<style>
+ul{
+  
+}
+</style>
+<div style="background-color:#E0CA3C;padding: 100px ;text-align: center;color:white">
+  <h3>SERVICES</h3>
+</div>
   
   <!-- Looping through post   -->
   {% for post_item in services %}
@@ -12,7 +18,7 @@
     <div class="col-md-4">
       <h2 style="font-weight:bold;margin-left:200px; padding-top: 30px;font-size:20px"> {{ post_item.title }} </h2>
       <ul>
-      <li style="margin-left: 150px;font-family: sans-serif;"> {{ post_item.service }}</li>
+      <li style="margin-left: 150px;font-family: sans-serif"> {{ post_item.service }}</li>
     </ul>
     </div>
     <div class="col-md-4">

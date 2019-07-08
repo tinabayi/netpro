@@ -38,7 +38,7 @@
 </head>
 <body>
 <div class="container"> 
-<nav class="navbar navbar-inverse" style="background-color: white;border:none;padding:0px">
+<nav class="navbar navbar-inverse " style="background-color: white;border:none;height:0px;margin-top: 20px">
  <a class="navbar-brand" href="{% url 'welcome' %}"><img src="https://www.brandcrowd.com/gallery/brands/pictures/picture1455031105948.jpg"height="90px" width="80px"></a>
   
   <div class="navbar-header" style= "padding:30px">
@@ -48,9 +48,9 @@
     <a  href="{% url 'home' %}" style=color:black >ABOUT US
     <span class="caret"></span></a>
     <div class="dropdown-content">
-      <a href="#">WHO WE ARE</a>
+      <a href="#">Who we are</a>
      
-      <a href="#">OUR VALUES</a>
+      <a href="#">Our Values</a>
      
       <a href="#">Our Vision</a>
       <a href="#">Our Mission</a>
@@ -58,47 +58,47 @@
   </div>
        
    
-      <div class="dropdown navbar-brand">
-          <a  href="{% url 'service' %}"  style=color:black >SERVICES
-          <span class="caret"></span></a>
-          <div class="dropdown-content">
-            <a href="#">ENTERPRISE INFRASTRUCTURE
-              SERVICES</a>
+ <div class="dropdown navbar-brand">
+  <a  href="{% url 'service' %}"  style=color:black >SERVICES
+  <span class="caret"></span></a>
+  <div class="dropdown-content">
+  <a href="#">Enterprise Infrastruscture
+              Services</a>
            
-            <a href="#">ENTERPRISE SERVICE</a>
+  <a href="#">Enterprise service</a>
            
-            <a href="#">NETWORKING SERVICES</a>
-            <a href="#">OUTSOURCING & SERVICE CENTRE</a>
-          </div>
-        </div>
-      
-      <div class="dropdown navbar-brand">
-          <a  href="{% url 'service' %}"  style=color:black >OUR security solutions
-          <span class="caret"></span></a>
-          <div class="dropdown-content">
-            <a href="#">ADVANCED IP SURVEILLANCE SOLUTIONS </a>
-            <a href="#">NETWORK SECURITY</a>
-           
-            <a href="#">ACCESS CONTROL</a>
-            <a href="#">PROJECT MANAGEMENT</a>
-          </div>
-          </div>
-
-          <div class="dropdown navbar-brand">
-              <a  href="{% url 'service' %}"  style=color:black >PROJECTS
-              <span class="caret"></span></a>
-              <div class="dropdown-content">
-                <a href="#"> </a>
-                <a href="#"></a>
-               
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-              </div>
-       
-      <a class="navbar-brand" href="{% url 'contact' %}"style=color:black>CONTACT US</a>
-
+  <a href="#">Networking services</a>
+  <a href="#">Outsourcing & Service center</a>
   </div>
+  </div>
+      
+<div class="dropdown navbar-brand">
+<a  href="{% url 'service' %}"  style=color:black >SECURITY SOLUTIONS
+<span class="caret"></span></a>
+<div class="dropdown-content">
+<a href="#">Advanced  IP Surveillance Solutions </a>
+<a href="#">Network Security</a>
+           
+<a href="#">Access Control</a>
+<a href="#">Project Managment</a>
+</div>
+</div>
+
+<div class="dropdown navbar-brand">
+<a  href="{% url 'service' %}"  style=color:black >PROJECTS
+<span class="caret"></span></a>
+<div class="dropdown-content">
+  <a href="#"> </a>
+  <a href="#"></a>
+               
+  <a href="#"></a>
+  <a href="#"></a>
+    </div>
+    </div>
+       
+ <a class="navbar-brand" href="{% url 'contact' %}"style=color:black>CONTACT US</a>
+
+</div>
   
 </nav>
 </div>

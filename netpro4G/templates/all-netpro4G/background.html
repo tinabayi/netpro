@@ -1,0 +1,23 @@
+{%extends 'all-netpro4G/base.html'%}
+{% block content %} 
+{{ block.super}}
+<div style="background-color:#E0CA3C">
+    <p style="padding:100px;text-align: center;font-size: 30px;color:white">WHO WE ARE.OUR VALUES.Our Vision.Our Mission</p>
+</div>
+<div class="container">
+<h3 style="text-align: center;color:#E0CA3C;font-weight: bold;padding-top: 50px">WELCOME TO  NETPRO LTD </h3><HR style="color:turquoise">
+
+
+
+  <!-- Looping through background   -->
+  {% for post_item in background %}
+ <p style="font-family: Lato Light, sans-serif;font-size: 20px" >{{ post_item.background }}</p> 
+ 
+   
+  {% empty %}
+  
+    <h2 class="text-center">There No post_item Items</h2>
+  
+  {% endfor %}
+</div>
+{% endblock %}
