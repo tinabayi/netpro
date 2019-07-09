@@ -2,44 +2,30 @@
 {% block content %} 
 {{ block.super}}
 
+ 
 
 <div style=background-color:#E0CA3C;padding:100px;color:white>
-  <h1 style=text-align:center>About Us</h1>
+  <u style="color:white"><h1 style=text-align:center>About Us</h1></u>
 </div>
 
 
   
-<div class="container">
+<div class="container-fluid">
 
 
-<div class="row">
+
 {% for post_item in post %}
-<div class="col-md-4" style="margin:20px">
-<h3 style ="margin-left: 30px;margin-bottom: 30px;margin-top: 40px">{{ post_item.title }}</h3>
-<p style="font-family: monospace">{{ post_item.post }}</p>
-<a href="{% url 'background' %}" style="background-color:#E0CA3C;padding:10px;margin-left:70px;color:white">Read More</a>
+<div class="row">
+  <div class="col-md-4">
+<h3>{{ post_item.title }}</h3>
+<p style="font-family: Lato Light, sans-serif;font-size: 21px;">{{ post_item.post }}</p>
+<a href="{% url 'background' %}" style="padding: 14px 25px;background-color:#E0CA3C; display: inline-block;" ><strong>Read More</strong></a>
+</div>
 
 {% endfor %}
-</div>
-</div>
 
-<div class="col-md-4">
-   <h3> Our Vision</h3>
-    <p style="font-family: monospace">To be recognized as the best value added service provider to our highly valued customers.</p>
-</div>
-<div class="col-md-4">
-    <h3>Our Mission</h3>
-     <p style="font-family: monospace">To provide high quality ICT products and value added services to our target customers with the aim of making
-        customers work better and faster.</p>
-</div>
-<div class="col-md-4">
-    <h3>OUR VALUES</h3>
-    <h6>Customer Delight</h6>
-    <p>– We strive to exceed our customers' expectations for bottom-line success.</p>
-    <h6>Accountability</h6>
-    <p>– We make personal commitment to our customers, partners and staff and hold ourselves 
-      accountable for keeping this promise.</p>
-</div>
+
+
 </div>
 {% endblock %}
 

@@ -1,37 +1,74 @@
 {%extends 'all-netpro4G/base.html'%}
 {% block content %} 
 {{ block.super}}
-<style>
-ul{
-  
-}
-</style>
+
 <div style="background-color:#E0CA3C;padding: 100px ;text-align: center;color:white">
-  <h3>SERVICES</h3>
+ <u style="color: white"> <h3>SERVICES</h3></u>
 </div>
   
-  <!-- Looping through post   -->
-  {% for post_item in services %}
+  <div class="container">
 
-  <div class="row">
-    <!-- displaying post -->
+  <div class="row" style="padding:50px">
     <div class="col-md-4">
-      <h2 style="font-weight:bold;margin-left:200px; padding-top: 30px;font-size:20px"> {{ post_item.title }} </h2>
-      <ul>
-      <li style="margin-left: 150px;font-family: sans-serif"> {{ post_item.service }}</li>
-    </ul>
-    </div>
-    <div class="col-md-4">
-    <img src="{{ post_item.image.url }}"style="height:350px; width:400px; padding-top: 30px;margin-left:350px" alt="Card image cap">
-         
+      <h3>ENTERPRISE INFRASTRUCTURE
+        SERVICES</h3>
+      <ul style="font-family: Lato Light, sans-serif;font-size: 21px;">
+        <li>Professional Services</li>
+        <li>Consultancy</li>
+        <li>Design and Implementation</li>
+        <li>Support/SLA</li>
+        <li>VOIP</li>
+        <li>Project Management</li>
+        <li>Video Conferencing</li>
+        <li>Remote Technical Support</li>
+        <li>Network/ Data Security</li>
+        <li>Switch and Routing</li>
+        <li>Wireless Networks</li>
+      </ul>
+</div>
+<div class="col-md-4">
+  <h3>ENTERPRISE SERVICE OFFERING</h3>
+  <ul style="font-family: Lato Light, sans-serif;font-size: 21px;">
+    <li>Professional Services</li>
+    <li>Implementation Support</li>
+    <li>Systems Migrations</li>
+    <li>Preventive Maintenance</li>
+    <li>Outsource</li>
+    <li>24*7 Support</li>
+    <li>Contracts (AMC)</li>
+    <li>Remote Technical Support</li>
+    <li>Virtualization</li>
     
-  </div>
- 
+  </ul>
 </div>
-  {% empty %}
-  
-    <h2 class="text-center">There No post_item Items</h2>
-  
-  {% endfor %}
-
+<div class="col-md-4">
+  <h3>NETWORKING SERVICES</h3>
+  <ul style="font-family: Lato Light, sans-serif;font-size: 21px;">
+    <li>Structured Cabling</li>
+    <li>Power Cabling</li>
+    <li>Fibre termination</li>
+    <li>Data Centre Buildings</li>
+    <li>Project Management</li>
+    <li>Network restructuring</li>
+    <li>Consultancy, Design,
+      Implementation and Support</li>
+    <li>Software licenses</li>
+    
+  </ul>
+</div>
+<div class="col-md-4">
+  <h3>OUTSOURCING & SERVICE CENTRE</h3>
+  <ul style="font-family: Lato Light, sans-serif;font-size: 21px;">
+    <li>SLAs 24*7 support</li>
+    <li>Facilities Management</li>
+    <li>Services (FMS) & Outsourcing</li>
+    <li>Project based services</li>
+    <li>Professional Services</li>
+    <li>AMC</li>
+    <li>Implementation and planning</li>
+    
+  </ul>
+</div>
+</div>
+</div>
 {% endblock %}
