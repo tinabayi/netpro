@@ -1,0 +1,34 @@
+{%extends 'all-netpro4G/base.html'%}
+{% block content %} 
+{{ block.super}}
+
+ 
+
+<div style=background-color:#E0CA3C;padding:100px;color:white>
+  <u style="color:white;margin-top:30px"><h1 style=text-align:center>Big Projects Completed by NETPRO</h1></u>
+</div>
+  
+<div class="container">
+
+{% for post_item in projects %}
+ <div class="row">
+  <div class="col-md-4">
+ <h3 style="font-weight: bold">{{ post_item.title }}</h3>
+ <p style="font-family: Lato Light, sans-serif;font-size: 20px">{{ post_item.project }}</p>
+ </div>
+
+{% endfor %}
+</div>
+<div class="row">
+<h2 style="margin-left:500px;font-weight: bold;padding: 20px">OUR BEST CLIENTS</h2>
+<div class="col-md-4">
+    <img src="http://www.bus-planet.com/bus/bus-africa/Rwanda-site/KBS/2012-06-03-55.jpg" height="120px" width="140px">  
+  </div>
+  <div class="col-md-4">
+        <img src="https://static.wixstatic.com/media/bf402c_41999cde932c49e6b77c23d8851ef218~mv2.png/v1/fill/w_142,h_142,al_c,q_80,usm_0.66_1.00_0.01/bf402c_41999cde932c49e6b77c23d8851ef218~mv2.webp" height="120px" width="140px">  
+      </div>
+      <div class="col-md-4">
+      <img src="https://www.unijobsbd.com/images/companylogo/1496046261_comp_258.png">
+      </div>
+    </div>
+{% endblock %}

@@ -48,9 +48,9 @@ class Contact(models.Model):
         return contacts
 
 
-class Service(models.Model):
+class Security(models.Model):
     title = models.CharField(max_length =60,null=True)
-    service = models.TextField(null=True)
+    security = models.TextField(null=True)
     
     
     def __str__(self):
@@ -58,12 +58,13 @@ class Service(models.Model):
     class Meta:
         ordering = ['title']
 
-    def save_service(self):
+    def save_security(self):
         self.save()
     @classmethod
-    def get_service(cls):
-        services = cls.objects.all();
-        return services
+    def get_security(cls):
+        security = cls.objects.all();
+        return security
+
 class Welcome(models.Model):
     title = models.CharField(max_length =60,null=True)
     welcome = models.TextField(null=True)
@@ -79,3 +80,19 @@ class Welcome(models.Model):
     def get_welcome(cls):
         welcomes = cls.objects.all();
         return welcomes      
+
+class Project(models.Model):
+    title = models.CharField(max_length =60,null=True)
+    project= models.TextField(null=True)
+    project_image = models.ImageField(upload_to = 'image/',null=True)
+    def __str__(self):
+        return self.title
+    class Meta:
+        ordering = ['title']
+
+    def save_project(self):
+        self.save()
+    @classmethod
+    def get_project(cls):
+        projects = cls.objects.all();
+        return projects             

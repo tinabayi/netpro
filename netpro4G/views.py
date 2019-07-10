@@ -1,6 +1,6 @@
 from django.http  import HttpResponse
 from django.shortcuts import render
-from .models import AboutUs,Contact,Service,Welcome,Background
+from .models import AboutUs,Contact,Welcome,Background,Security,Project
 # Create your views here.
 def welcome(request):
     welcomes =Welcome.get_welcome()
@@ -24,6 +24,14 @@ def contact(request):
 
 def service(request):
     
-    services =Service.get_service()
-    return render(request, 'all-netpro4G/service.html', {"services":services})   
     
+    return render(request, 'all-netpro4G/service.html')   
+def security(request):
+    
+    security =Security.get_security()
+    return render(request, 'all-netpro4G/security.html', {"security":security})     
+
+def project(request):
+    
+    projects =Project.get_project()
+    return render(request, 'all-netpro4G/project.html', {"projects":projects})    

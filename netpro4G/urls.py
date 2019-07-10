@@ -7,7 +7,9 @@ urlpatterns=[
     url(r'^NETPROLTD/home$',views.home,name = 'home'),
     url(r'^NETPROTLD/contact$',views.contact,name = 'contact'),
     url(r'^NETPROTLD/services$',views.service,name = 'service'),
-    url(r'^background$',views.background,name = 'background'),
+    url(r'^NETPROLTD/background$',views.background,name = 'background'),
+    url(r'^NETPROLTD/security$',views.security,name = 'security'),
+    url(r'^NETPROLTD/project$',views.project,name = 'project'),
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT) 

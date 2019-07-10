@@ -1,0 +1,43 @@
+{%extends 'all-netpro4G/base.html'%}
+{% block content %} 
+{{ block.super}}
+
+<div style="background-color:#E0CA3C">
+ <u style="color:white"><h3 style="padding:100px;text-align: center;font-size: 30px;color:white">OUR security solutions</h3></u> 
+</div>
+<div class="container">
+
+ <diV style=" border: 1px solid #E0CA3C;
+  box-sizing: border-box;width: 1100px;
+  height: 200px">
+
+  <div class="row">
+    <div class="col-md-6">
+      <h3>SAFE BUSINESSES</h3>
+    </diV>  
+    <div class="col-md-6">
+     <strong><p style="font-family: 'Abril Fatface', cursive;font-size: 17px;font-style: oblique">Security is the state of being free from danger. At NetPro Security, our Security solutions leave you free from
+        danger. Our intimate understanding of Security is what allows us to offer unique solutions as opposed to wholesale
+        services.
+        To design a security solution that is tailor made, an intricate understanding of security is required. All security
+        measures are implemented with the aim of managing a risk or threat. We are able to provide answers to the
+        problems of physical security as well as network security.</p></strong> 
+    </div> 
+    </div>
+  </diV>
+  {% for post_item in security %}
+  <div class="row" style="padding: 30px">
+   <div class="col-md-6">
+    <h2>{{ post_item.title }}</h2>
+  </div>
+  <div class="col-md-6">
+    <p style="font-family: Lato Light, sans-serif;font-size: 18px;">{{ post_item.security }}</p>
+  </div>
+
+  </div>
+   {% endfor %}
+  
+
+  
+</div>
+{% endblock %}

@@ -17,7 +17,7 @@
 {% for post_item in post %}
 <div class="row">
   <div class="col-md-4">
-<h3>{{ post_item.title }}</h3>
+<h3 style="font-weight: bold" >{{ post_item.title }}</h3>
 <p style="font-family: Lato Light, sans-serif;font-size: 21px;">{{ post_item.post }}</p>
 <a href="{% url 'background' %}" style="padding: 14px 25px;background-color:#E0CA3C; display: inline-block;" ><strong>Read More</strong></a>
 </div>
