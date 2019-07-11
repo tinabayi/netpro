@@ -4,28 +4,26 @@
 
  
 
-<div style=background-color:#E0CA3C;padding:100px;color:white>
+<div style="background-color:#E0CA3C;padding:40px;color:white;margin-bottom: 90px">
   <u style="color:white"><h1 style=text-align:center>About Us</h1></u>
 </div>
 
 
   
-<div class="container-fluid">
-
-
-
-{% for post_item in post %}
+<div class="container">
 <div class="row">
-  <div class="col-md-4">
+{% for post_item in post %}
+
+ <div class="col-md-3">
 <h3 style="font-weight: bold" >{{ post_item.title }}</h3>
-<p style="font-family: Lato Light, sans-serif;font-size: 21px;">{{ post_item.post }}</p>
-<a href="{% url 'background' %}" style="padding: 14px 25px;background-color:#E0CA3C; display: inline-block;" ><strong>Read More</strong></a>
+<p style="font-family: Lato Light, sans-serif;font-size: 21px;">{{ post_item.post }} <a href="{% url 'background' %}">Read more</a></p>
+
 </div>
+
 
 {% endfor %}
-
-
-
 </div>
+</div>
+
 {% endblock %}
 

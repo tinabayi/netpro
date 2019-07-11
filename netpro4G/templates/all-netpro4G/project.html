@@ -1,7 +1,50 @@
 {%extends 'all-netpro4G/base.html'%}
 {% block content %} 
 {{ block.super}}
-
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      background-color: #f1f1f1;
+      margin:20px;
+    }
+    </style>
  
 
 <div style=background-color:#E0CA3C;padding:100px;color:white>
@@ -9,26 +52,60 @@
 </div>
   
 <div class="container">
-
+<div class="row">
 {% for post_item in projects %}
- <div class="row">
+
   <div class="col-md-4">
- <h3 style="font-weight: bold">{{ post_item.title }}</h3>
+ <h4 style="font-weight: bold">{{ post_item.title }}</h4>
  <p style="font-family: Lato Light, sans-serif;font-size: 20px">{{ post_item.project }}</p>
  </div>
-
 {% endfor %}
 </div>
+
 <div class="row">
-<h2 style="margin-left:500px;font-weight: bold;padding: 20px">OUR BEST CLIENTS</h2>
-<div class="col-md-4">
-    <img src="http://www.bus-planet.com/bus/bus-africa/Rwanda-site/KBS/2012-06-03-55.jpg" height="120px" width="140px">  
-  </div>
-  <div class="col-md-4">
-        <img src="https://static.wixstatic.com/media/bf402c_41999cde932c49e6b77c23d8851ef218~mv2.png/v1/fill/w_142,h_142,al_c,q_80,usm_0.66_1.00_0.01/bf402c_41999cde932c49e6b77c23d8851ef218~mv2.webp" height="120px" width="140px">  
-      </div>
-      <div class="col-md-4">
-      <img src="https://www.unijobsbd.com/images/companylogo/1496046261_comp_258.png">
-      </div>
-    </div>
+<u style="color:#E0CA3C;margin-top: 30px"><h2 style="margin-left:250px;font-weight: bold;padding: 50px;color:#E0CA3C">OUR BEST CLIENTS</h2></u>
+<div class="col-md-3">
+<div class="card"> 
+ <img class="card-img-top" src="http://www.bus-planet.com/bus/bus-africa/Rwanda-site/KBS/2012-06-03-55.jpg" height="120px" width="180px">  
+</div>
+</div>
+<div class="col-md-3">
+<div class="card"> 
+ <img src="https://static.wixstatic.com/media/bf402c_41999cde932c49e6b77c23d8851ef218~mv2.png/v1/fill/w_142,h_142,al_c,q_80,usm_0.66_1.00_0.01/bf402c_41999cde932c49e6b77c23d8851ef218~mv2.webp" height="120px" width="140px">  
+</div>
+</div>
+<div class="col-md-3">
+<div class="card"> 
+  <img src="https://www.unijobsbd.com/images/companylogo/1496046261_comp_258.png" height="120px" width="140px">
+</div>
+</div>
+    
+<div class="col-md-3">
+<div class="card"> 
+ <img src="https://media.licdn.com/dms/image/C4D0BAQEZjYT_NXkGkA/company-logo_200_200/0?e=2159024400&v=beta&t=8Xzo0csfekOPXEa9K5eiWqzLQcHdY38uFAHICXI5-c8" height="120px" width="140px">
+</div>
+</div>
+
+<div class="col-md-3">
+ <div class="card"> 
+ <img src="https://armacad.info/images/2017/11/22/a392d9b7c7f0f749.jpg" height="150px" width="190px">
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+ <img src="https://media.licdn.com/dms/image/C560BAQEmc_vU425pvw/company-logo_200_200/0?e=2159024400&v=beta&t=diTNwngJ4M-TVYGA2aZlRPxlo3Pr9M1ezWEMrKspS5g" height="100px" width="100px">
+</div>
+</div>
+<div class="col-md-3">
+    <div class="card">
+  <img src="https://1.bp.blogspot.com/-035FDGkgAn0/UP6ItWpDAbI/AAAAAAAAFUw/7rnfF6gBnYM/s320/Logo+TVS.jpg" height="120px" width="140px">
+</div>
+</div>
+<div class="col-md-3">
+  <div class="card">
+  <img src="http://hose.rw/wp-content/uploads/2016/12/PSF.jpg" height="120px" width="140px">
+</div>
+</div>
+ </div>                  
+</div>
 {% endblock %}
