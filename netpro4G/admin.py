@@ -2,7 +2,7 @@
 from django.contrib import admin
 # Register your models here.
 
-from .models import AboutUs,Contact,Welcome,Background,Security,Project
+from .models import AboutUs,Contact,Welcome,Background,Security,Project,Values
 
 admin.site.register(AboutUs)
 admin.site.register(Contact)
@@ -11,3 +11,4 @@ admin.site.register(Welcome)
 admin.site.register(Background)
 admin.site.register(Security)
 admin.site.register(Project)
+admin.site.register(Values)

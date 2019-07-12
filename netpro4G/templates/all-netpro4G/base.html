@@ -30,17 +30,33 @@
 
     
   <footer style="background-color:#E9E6FF">
-  <u style=color:#E0CA3C><h2 style="font-weight:bold;margin-left:200px;color:#E0CA3C">HEAD OFFICE</h2></u>
+  <div class="container">
+   <div class="row">
+     <div class="col-md-4">
+       <img  style="padding-top:40px"src="https://static.wixstatic.com/media/bf402c_80ca5fdf2c894db1b0a8c7551eba8e93~mv2.png/v1/fill/w_314,h_120,al_c,lg_1,q_80/NetPro%20logo.webp" height="100px" width="180px">
+       <p style="padding-top:120px;font:sans serif">© 2019-Copyright All Rights with <a href="{% url 'background' %}"><strong>NETPRO LTD</strong></a></p>
+ 
+     </div>
+     <div class="col-md-4" style="padding-top: 40px;font: sans serif">
+      <u style=color:#E0CA3C><h2 style="color:#E0CA3C">HEAD OFFICE</h2></u>
 
-    <h4 style="margin-left:400px;font-weight:bold;font-size:20px">NETPRO LTD</h4>
-    <p style="margin-left:400px;font-size:20px;font-weight:bold">Gishushu KG 9 Av 13.</p>
-    <p style="margin-left:400px;font-size:20px;font-weight:bold">Phone: 0786-856-484 / 0787-702-757</p>
-    <p style="margin-left:400px;font-size:20px;font-weight:bold">Email: netprorwanda@gmail.com</p>
-    <p style="margin-left:400px;font-size:20px;font-weight:bold">Website: netproltd.com</p>
-    <p style="color:blue;margin-left:400px;font-size:30px;font-family:monospace;font-weight:bold">Thank you for working with Us!</p>
-    <div style="background-color:black;padding:30px;color:white">© 2019-Copyright All Rights with 
-        <a href="{% url 'background' %}"><strong>NETPRO LTD</strong></a>
-      </div>
+      <h4>NETPRO LTD</h4>
+      <p>Gishushu KG 9 Av 13.</p>
+      <p>Phone: 0786-856-484 / 0787-702-757</p>
+      <p>Email: netprorwanda@gmail.com</p>
+      <p>Website: netproltd.com</p>
+      
+     </div>
+     <div class="col-md-4" style="padding-top: 70px;font: sans serif;">
+        <p><a href="{% url 'welcome' %}">Home</a></p>
+       <p><a href="{% url 'home' %}"> About Us</a></p>
+       <p><a href="{% url 'security' %}">Security Solutions</a></p>
+       <p><a href="{% url 'project' %}">Projects</a></p>
+       <p style="padding-top:20px;font-size: 20px;color:blue">Thank you for working with Us!</p>
+       
+     </div>
+    </div>
+    </div>
     </footer>
     {% block scripts %}
     

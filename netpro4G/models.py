@@ -96,3 +96,18 @@ class Project(models.Model):
     def get_project(cls):
         projects = cls.objects.all();
         return projects             
+class Values(models.Model):
+    title = models.CharField(max_length =60,null=True)
+    values= models.TextField(null=True)
+   
+    def __str__(self):
+        return self.title
+    class Meta:
+        ordering = ['title']
+
+    def save_values(self):
+        self.save()
+    @classmethod
+    def get_values(cls):
+        values = cls.objects.all();
+        return values                    

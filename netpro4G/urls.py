@@ -10,6 +10,7 @@ urlpatterns=[
     url(r'^NETPROLTD/background$',views.background,name = 'background'),
     url(r'^NETPROLTD/security$',views.security,name = 'security'),
     url(r'^NETPROLTD/project$',views.project,name = 'project'),
+    url(r'^NETPROLTD/values$',views.values,name = 'values'),
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT) 

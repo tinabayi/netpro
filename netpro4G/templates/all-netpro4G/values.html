@@ -1,0 +1,28 @@
+{%extends 'all-netpro4G/base.html'%}
+{% block content %} 
+{{ block.super}}
+
+
+  <div style="background-color:#E0CA3C;padding: 40px">
+<u style="color:white"><h2 style="text-align: center">Our Values</h2></u>
+  </div>
+  <div class="container">
+    
+  <!-- Looping through values   -->
+  {% for value_item in values %}
+
+ 
+      
+       <h3 style="font-weight: bold;text-align: center">{{ value_item.title }}</h3> 
+        <p style="font-family: Lato Light, sans-serif;font-size: 21px;text-align: center">{{ value_item.values }}</p>
+   
+ 
+  
+    
+
+  {% endfor %}
+
+
+</div>
+
+{% endblock %}
