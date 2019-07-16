@@ -6,14 +6,14 @@
   <div style="background-color:#E0CA3C;padding: 100px">
 <u style="color:white"><h2 style="text-align: center">Contact</h2></u>
   </div>
-
+<div class="container">
   <!-- Looping through post   -->
   {% for contact_item in contacts %}
 
   <div class="row">
     <!-- displaying post -->
    
-    <div class="col-md-6" style="margin-left: 180px">
+    <div class="col-md-6">
      <h3 style="font-weight: bold">Adress</h3>
       <p style="font-family: Lato Light, sans-serif;font-size: 21px "> {{ contact_item.title }} </p>
       <p style="font-family: Lato Light, sans-serif;font-size: 21px " > {{ contact_item.location }}</p>
@@ -22,14 +22,40 @@
       <p style="font-family: Lato Light, sans-serif;font-size: 21px "> {{ contact_item.website}}</p>
     </div>
    
-  </div>
-
-  {% empty %}
-  <div class="row">
-    <h2 class="text-center">There No post_item Items</h2>
   
-  {% endfor %}
+
+<h3 style="font-weight: bold">Contact Details</h3> 
+
+<div class="col-md-6">  
+<form method="post" action="http://www.example.com/cgi-bin/FormMail.pl" 
+accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; 
+document.charset = 'ISO-8859-1'; 
+window.onbeforeunload = function () {document.charset=originalCharset;};">
+Name
+<br />
+<input name="realname" />
+<br />
+Email
+<br />
+<input name="email" />
+<br />
+Message
+<br />
+<textarea cols="40" rows="10" name="Message"></textarea>
+<br />
+<input type="submit" value="Send" />
+<input type="hidden" name="recipient" value="email@example.com" />
+<input type="hidden" name="subject" value="Subject" />
+<input type="hidden" name="redirect" 
+value="http://www.example.com/thanks.html" />
+<input type="hidden" name="missing_fields_redirect" 
+value="http://www.example.com/error.html" />
+<input type="hidden" name="required" value="realname,email,Message" />
+</form>
 </div>
 
-
+  {% endfor %}
+</div>
+</div>
+</div>
 {% endblock %}
