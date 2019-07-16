@@ -15,14 +15,14 @@
 {% for post_item in post %}
  <div class="col-md-3">
 <h3 style="font-weight: bold" >{{ post_item.title }}</h3>
-<p style="font-family: Lato Light, sans-serif;font-size: 21px;">{{ post_item.post }} <a href="{% url 'background' %}">Read more</a></p>
+<p style="font-family: Lato Light, sans-serif;font-size: 21px;">{{ post_item.post }} <a href="{% url 'background' %}"><strong>Read more</strong></a></p>
 
 </div>
 {% endfor %}
 <div class="col-md-3">
   <h3 style="font-weight: bold">OUR VALUES</h3>
   <h4 style="font-weight: bold">Customer Delight</h4> 
-  <p style="font-family: Lato Light, sans-serif;font-size: 21px">We strive to exceed our customers' expectations for bottom-line success.<a href="{% url 'values' %}">Read more</a></p>
+  <p style="font-family: Lato Light, sans-serif;font-size: 21px">We strive to exceed our customers' expectations for bottom-line success.<a href="{% url 'values' %}"><strong>Read more</strong></a></p>
 </div>
 </div>
 </div>

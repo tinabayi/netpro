@@ -39,21 +39,19 @@
 <body>
 
 <nav class="navbar navbar-inverse " style="background-color: white;border:none">
- <a class="navbar-brand" style="margin-left: 4px" href="{% url 'welcome' %}"><img src="https://static.wixstatic.com/media/bf402c_80ca5fdf2c894db1b0a8c7551eba8e93~mv2.png/v1/fill/w_314,h_120,al_c,lg_1,q_80/NetPro%20logo.webp" height="90px" width="180px"></a>
+<a class="navbar-brand" style="margin-left: 4px" href="{% url 'welcome' %}"><img src="https://static.wixstatic.com/media/bf402c_80ca5fdf2c894db1b0a8c7551eba8e93~mv2.png/v1/fill/w_314,h_120,al_c,lg_1,q_80/NetPro%20logo.webp" height="90px" width="180px"></a>
   
-  <div class="navbar-header" style= "margin-left:350px;font-weight:bold">
-   <a class="navbar-brand" href="{% url 'welcome' %}"style=color:black>HOME</a>
+<div class="navbar-header" style= "margin-left:350px;font-weight:bold">
+ <a  class="navbar-brand" href="{% url 'welcome' %}"style=color:black>HOME</a>
 
-   <div class="dropdown navbar-brand">
-    <a  href="{% url 'home' %}" style=color:black >ABOUT US
-    <span class="caret"></span></a>
-    <div class="dropdown-content">
-      <a href="#">Who we are</a>
-     
-      <a href="#">Our Values</a>
-     
-      <a href="#">Our Vision</a>
-      <a href="#">Our Mission</a>
+  <div class="dropdown navbar-brand">
+   <a  href="{% url 'home' %}" style=color:black >ABOUT US
+  <span class="caret"></span></a>
+   <div class="dropdown-content">
+    <a href="#">Who we are</a>
+    <a href="#">Our Values</a>
+    <a href="#">Our Vision</a>
+    <a href="#">Our Mission</a>
     </div>
   </div>
        
@@ -64,9 +62,7 @@
   <div class="dropdown-content">
   <a href="#">Enterprise Infrastruscture
               Services</a>
-           
   <a href="#">Enterprise service</a>
-           
   <a href="#">Networking services</a>
   <a href="#">Outsourcing & Service center</a>
   </div>
