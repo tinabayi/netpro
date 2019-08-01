@@ -11,13 +11,14 @@
     font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
 }
-* {
+
+ * {
   box-sizing: border-box;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
+} 
 
 /* Float four columns side by side */
 .column {
@@ -46,7 +47,7 @@ body {
 }
 
 /* Style the counter cards */
-.card {
+ .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
@@ -54,29 +55,38 @@ body {
   margin:30px;
 }
 
-.mySlides {display:none;}
+.mySlides {display:none;} 
 #more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
 </style>
-<div style="background-color:#E0CA3C;padding: 10px" >
+<div style="background-color:#E0CA3C;padding: 1px" >
 
 <h1 class="netpro" style="font-family: 'PT Serif', serif">NETPRO LTD</h1>
 <h3 style="font-size:20px;font-weight:bold;padding: 0px 50px 5px 470px">The portal to the world wide</h3>
 
 </div>
-<div class="w3-content" style="background-size: cover">
-        <!-- <div class="mySlides w3-container w3-red">
-          <h1><b>Did You Know?</b></h1>
-          <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
-        </div> -->
+
+<div class="slideshow-container">
+
+  
+  
+<div class="w3-content" style="background-size: cover"> 
+  
+
+
       
-<img class="mySlides" src="https://africabusinesscommunities.com/assets/images/2018/06/4G%20LTE.jpg" style="width:100%px">
-        <!-- <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
-          <p><span class="w3-tag w3-yellow">New!</span>
-          <p>6 Crystal Glasses</p>
-          <p>Only $99 !!!</p>
-        </div> -->
-      
+<!-- <img class="mySlides" src="https://africabusinesscommunities.com/assets/images/2018/06/4G%20LTE.jpg" style="width:100%px"> --> 
+  <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+          <p><span class="w3-tag w3-yellow"></span>
+          <p>Behind a great BRAND</p>
+          <p>Is a great TEAM</p>
+        </div> 
+     
 <img class="mySlides" src="https://jclao.com/wp-content/uploads/2018/09/New-Internet-Service-Provider-To-Expand-Network.jpg" alt="image" height="400px" width="900px">
+</div> 
 </div>
 
 
@@ -100,7 +110,6 @@ body {
     <p style="font-size: 20px">Our confidence in the availability and reliability of
     Our network is backed by a solid 
     <span id="dots1">...</span><span id="more1">
-    
       guarantee. We offer up to 99.9% availability SLA.
       If we don’t achieve this we pay you back.   
     </span><a style="font-weight: bold" onclick="myFunction1()" id="myBtn1">Read more</strong></a></p>
@@ -220,8 +229,10 @@ body {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 3000); // Change image every 3 seconds
   }
+  
+
 
   function myFunction() {
   var dots = document.getElementById("dots");
