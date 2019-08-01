@@ -1,0 +1,27 @@
+{%extends 'all-netpro4G/base.html'%}
+{% block content %} 
+{{ block.super}}
+
+
+  <div style="background-color:#E0CA3C;padding: 40px">
+<u style="color:white"><h2 style="text-align: center">Our Missions&&Our Visions</h2></u>
+  </div>
+  <div class="container">
+    
+  <!-- Looping through values   -->
+  {% for mission_item in missions %}
+
+  <div class="row">
+   
+       <h3 style="font-weight: bold;text-align: center">{{ mission_item.title }}</h3> 
+        <p style="font-family: Lato Light, sans-serif;font-size: 21px;text-align: center">{{ mission_item.missions }}</p>
+   
+ </div>
+  
+    
+
+  {% endfor %}
+
+
+</div>
+{% endblock %}

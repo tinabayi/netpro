@@ -110,4 +110,19 @@ class Values(models.Model):
     @classmethod
     def get_values(cls):
         values = cls.objects.all();
-        return values                    
+        return values     
+class Mission(models.Model):
+    title = models.CharField(max_length =60,null=True)
+    missions= models.TextField(null=True)
+   
+    def __str__(self):
+        return self.title
+    class Meta:
+        ordering = ['title']
+
+    def save_missions(self):
+        self.save()
+    @classmethod
+    def get_missions(cls):
+        missions = cls.objects.all();
+        return missions                                           
