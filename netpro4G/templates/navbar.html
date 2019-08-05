@@ -56,39 +56,28 @@
        
    
  <div class="dropdown navbar-brand">
-  <a  href="{% url 'service' %}"  style=color:black >SERVICES
+  <a   style=color:black >SERVICES
   <span class="caret"></span></a>
   <div class="dropdown-content">
-  <a href="#">Enterprise Infrastruscture
-              Services</a>
-  <a href="#">Enterprise service</a>
-  <a href="#">Networking services</a>
-  <a href="#">Outsourcing & Service center</a>
+  <a href="{% url 'service' %}">Enterprise Infrastruscture Services</a>
+  <a href="{% url 'service1' %}">Enterprise service</a>
+  <a href="{% url 'service2' %}">Networking services</a>
+  <a href="{% url 'service3' %}">OUTSOURCING & SERVICE CENTRE</a>
   </div>
   </div>
       
 <div class="dropdown navbar-brand">
-<a  href="{% url 'security' %}"  style=color:black >SECURITY SOLUTIONS
+<a  style=color:black >SECURITY SOLUTIONS
 <span class="caret"></span></a>
 <div class="dropdown-content">
-<a href="#">Advanced  IP Surveillance Solutions </a>
-<a href="#">Network Security</a>
-           
-<a href="#">Access Control</a>
-<a href="#">Project Managment</a>
+<a href="{% url 'security' %}" >SAFE BUSINESSES </a>
+
 </div>
 </div>
 
 <div class="dropdown navbar-brand">
 <a  href="{% url 'project' %}"  style=color:black >PROJECTS
-<span class="caret"></span></a>
-<div class="dropdown-content">
-  <a href="#">Smartnet Registration </a>
-  <a href="#">ICT Innovation Center</a>
-               
-  <a href="#"></a>
-  <a href="#"></a>
-    </div>
+
     </div>
        
  <a class="navbar-brand" href="{% url 'contact' %}"style=color:black>CONTACT US</a>

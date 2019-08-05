@@ -125,4 +125,21 @@ class Mission(models.Model):
     @classmethod
     def get_missions(cls):
         missions = cls.objects.all();
-        return missions                                           
+        return missions 
+
+class Service(models.Model):
+    title = models.CharField(max_length =60,null=True)
+    services= models.TextField(null=True)
+   
+    def __str__(self):
+        return self.title
+    class Meta:
+        ordering = ['title']
+
+    def save_servicess(self):
+        self.save()
+    @classmethod
+    def get_services(cls):
+        services = cls.objects.all();
+        return services 
+                                                     

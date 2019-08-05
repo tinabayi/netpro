@@ -52,15 +52,18 @@
 </div>
   
 <div class="container">
-<div class="row">
-{% for post_item in projects %}
 
-  <div class="col-md-4">
+{% for post_item in projects %}
+<div class="row" style="padding: 30px">
+<div class="col-md-6">
  <h4 style="font-weight: bold">{{ post_item.title }}</h4>
- <p style="font-family: Lato Light, sans-serif;font-size: 20px">{{ post_item.project }}</p>
+  </div>
+  <div class="col-md-6">
+ <p style="font-family: Lato Light, sans-serif;font-size: 17px">{{ post_item.project }}</p>
  </div>
-{% endfor %}
 </div>
+{% endfor %}
+
 
 <div class="row">
 <u style="color:#E0CA3C;margin-top: 30px"><h2 style="margin-left:250px;font-weight: bold;padding: 50px;color:#E0CA3C">OUR BEST CLIENTS</h2></u>
