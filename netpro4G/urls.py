@@ -9,7 +9,6 @@ urlpatterns=[
     url(r'^NETPROTLD/services$',views.service,name = 'service'),
     url(r'^NETPROLTD/background$',views.background,name = 'background'),
     url(r'^NETPROLTD/security$',views.security,name = 'security'),
-   
     url(r'^NETPROLTD/values$',views.values,name = 'values'),
     url(r'^NETPROLTD/Missions$',views.mission,name = 'mission'),
     url(r'^NETPROLTD/services$',views.service1,name = 'service1'),

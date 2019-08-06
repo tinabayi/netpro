@@ -8,91 +8,105 @@
 .netpro{
     color:blue;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
 }
-
- * {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-} 
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 30%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
- .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-  margin:30px;
-}
-
-.mySlides {display:none;} 
+* {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      background-color: #f1f1f1;
+      margin:20px;}
 #more {display: none;}
 #more1 {display: none;}
 #more2 {display: none;}
 #more3 {display: none;}
-#more4 {display: none;}
+.intro{
+  background-color: #DDE1E4
+} */
 </style>
-<div style="background-color:#E0CA3C;padding: 1px" >
+<div style="background-color:#E0CA3C">
 
-<h1 class="netpro" style="font-family: 'PT Serif', serif">NETPRO LTD</h1>
-<h3 style="font-size:20px;font-weight:bold;padding: 0px 50px 5px 470px">The portal to the world wide</h3>
-
-</div>
-
-<div class="slideshow-container">
-
-  
-  
-<div class="w3-content" style="background-size: cover"> 
-  
-
-
-      
-<!-- <img class="mySlides" src="https://africabusinesscommunities.com/assets/images/2018/06/4G%20LTE.jpg" style="width:100%px"> --> 
-  <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
-          <p><span class="w3-tag w3-yellow"></span>
-          <p>Behind a great BRAND</p>
-          <p>Is a great TEAM</p>
-        </div> 
-     
-<img class="mySlides" src="https://jclao.com/wp-content/uploads/2018/09/New-Internet-Service-Provider-To-Expand-Network.jpg" alt="image" height="400px" width="900px">
-</div> 
+<h1 class="netpro" style="font-family: 'PT Serif', serif;padding-top: 30px">NETPRO LTD</h1>
+<h3 style="font-size:20px;font-weight:bold;padding-top:2px;margin-left:500px;padding-bottom: 20px">The portal to the world wide</h3>
 </div>
 
 
-<u style="color:#E0CA3C"><h2 style="text-align: center;font-size:30px;font-weight: bold;padding-top: 30px;padding-bottom: 30px;color:#E0CA3C">Why Choose NetPro?</h2></u>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-  <div class="row">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="media/image/image1.png" alt="..." style="height: 350px">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="media/image/image2.jpeg" alt="..." style= " margin-left:100px ;height:350px; width:1000px">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="intro">
+<u><h2 style="text-align: center;font-size:30px;font-weight: bold;padding-top: 30px;padding-bottom: 30px;color:black">Why Choose NetPro?</h2></u>
+
+  <div class="row" style="background-color: white;margin-left: 8px;margin-right: 8px">
         
   
     
@@ -115,8 +129,8 @@ body {
     </span><a style="font-weight: bold" onclick="myFunction1()" id="myBtn1">Read more</strong></a></p>
   </div>   
   <div  class="col-md-2" style="margin-left: 40px">
-      <h4 style="font-weight: bold" >QUALITY SERVICE</h4>
-      <p style="font-size: 16px">We consistently deliver high quality service and solutions
+      <h4 style="font-weight: bold;" >QUALITY SERVICE</h4>
+      <p style="font-size: 16px;">We consistently deliver high quality service and solutions
           to our customers based on our technology 
       <span id="dots2">...</span><span id="more2">
            platform and
@@ -128,7 +142,7 @@ body {
       </span><a style="font-weight: bold" onclick="myFunction2()" id="myBtn2">Read more</strong></a></p>
     </div>   
     <div  class="col-md-2" style="margin-left: 40px">
-      <h4 style="font-weight: bold" >PROMISE&INNOVATION</h4>
+      <h4 style="font-weight: bold;" >PROMISE&INNOVATION</h4>
       <p style="font-size: 16px">We promise to provide fully redundant international
          bandwidth through the fiber optic cable <span id="dots3">...</span>
       
@@ -144,7 +158,7 @@ body {
    </div>
   <div class="row">
      
-    <u style="color:#E0CA3C"><h2 style="margin-left: 460px;font-size: 30px;padding:40px;font-weight: bold;color:#E0CA3C">OUR PARTNERS</h2></u>
+    <u><h2 style="margin-left: 460px;font-size: 30px;padding:40px;font-weight: bold">OUR PARTNERS</h2></u>
     <div  class="col-md-3">
     <div class="card"> 
     <img src="http://logo-load.com/uploads/posts/2016-03/1457880089_alcatel-logo.jpg" alt="image" height="90px" width="90px">
@@ -190,26 +204,10 @@ body {
 
 </div>
 
-
+</div>
 
 <script>
-  
-  var myIndex = 0;
-  carousel();
-
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3000); // Change image every 3 seconds
-  }
-  
-
+ 
 
   function myFunction() {
   var dots = document.getElementById("dots");
@@ -271,21 +269,6 @@ function myFunction3() {
     moreText.style.display = "inline";
   }
 }
-// function myFunction4() {
-//   var dots = document.getElementById("dots4");
-//   var moreText = document.getElementById("more4");
-//   var btnText = document.getElementById("myBtn4");
-
-//   if (dots.style.display === "none") {
-//     dots.style.display = "inline";
-//     btnText.innerHTML = "Read more"; 
-//     moreText.style.display = "none";
-//   } else {
-//     dots.style.display = "none";
-//     btnText.innerHTML = "Read less"; 
-//     moreText.style.display = "inline";
-//   }
-// }
 
     
 </script>
