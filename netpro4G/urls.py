@@ -11,9 +11,9 @@ urlpatterns=[
     url(r'^NETPROLTD/security$',views.security,name = 'security'),
     url(r'^NETPROLTD/values$',views.values,name = 'values'),
     url(r'^NETPROLTD/Missions$',views.mission,name = 'mission'),
-    url(r'^NETPROLTD/services$',views.service1,name = 'service1'),
-    url(r'^NETPROLTD/service$',views.service2,name = 'service2'),
-    url(r'^NETPROLTD/service$',views.service3,name = 'service3'),
+    url(r'^NETPROLTD/service1$',views.service1,name = 'service1'),
+    url(r'^NETPROLTD/service2$',views.service2,name = 'service2'),
+    url(r'^NETPROLTD/service3$',views.service3,name = 'service3'),
     url(r'^NETPROLTD/project$',views.project,name = 'project'),
 ]
 if settings.DEBUG:
