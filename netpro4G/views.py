@@ -1,5 +1,7 @@
 from django.http  import HttpResponse
 from django.shortcuts import render
+from django.core.mail import send_mail
+from django.conf import settings
 from .models import AboutUs,Contact,Welcome,Background,Security,Project,Values,Mission,Service
 # Create your views here.
 def welcome(request):
@@ -18,7 +20,7 @@ def background(request):
 
 
 def contact(request):
-    
+
     contacts =Contact.get_contact()
     return render(request, 'all-netpro4G/contact.html', {"contacts":contacts})   
 
