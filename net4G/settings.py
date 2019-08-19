@@ -56,27 +56,27 @@ SECRET_KEY = '5+v4i&in1k2x7)^e3u467)$k$80)rw^wy!)#b^qfuge^i62rw#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'bayizerechristine4@gmail.com'
-EMAIL_HOST_PASSWORD = 'wecode2019kie'
+EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'bayizerechristine4@gmail.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
 EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
 
 # Application definition
 
 INSTALLED_APPS = [
-     'netpro4G.apps.Netpro4GConfig',
-      'bootstrap3',
+    'netpro4G.apps.Netpro4GConfig',
+    'bootstrap3',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -86,6 +86,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+   
 ]
 
 ROOT_URLCONF = 'net4G.urls'
@@ -93,6 +94,8 @@ ROOT_URLCONF = 'net4G.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+      
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
