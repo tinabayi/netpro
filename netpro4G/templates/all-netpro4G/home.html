@@ -11,15 +11,18 @@
 
   
 <div class="container">
-<div class="row">
+
 {% for post_item in post %}
-
-<h3 style="font-weight: bold;margin-left: 90px;padding: 20px" >{{ post_item.title }}</h3>
-<p style="font-family: Lato Light, sans-serif;font-size: 21px;">{{ post_item.post }}</p>
-
-
+<div class="row" style=padding-bottom:50px>
+  <div class="col-md-6">
+<h3 style="font-weight: bold;margin-top: 30px" >{{ post_item.title }}</h3>
+</div>
+<div class="col-md-6">
+<p style="font-family: Lato Light, sans-serif;font-size: 21px;padding-top: 20px">{{ post_item.post }}</p>
+</div>
+</div>
 {% endfor %}
 </div>
-</div>
+
 {% endblock %}
 
