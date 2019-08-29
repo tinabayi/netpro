@@ -9,6 +9,7 @@
   <title>NETPRO LTD - {{title}}</title>
   {% else %}
     <title> NETPRO LTD </title>
+    
   {% endif %}
 
   {% block styles %}
@@ -32,12 +33,12 @@
   <footer style="background-color:#4C4C4C">
   <div class="container">
    <div class="row">
-     <div class="col-md-4">
+     <div class="col-md-4"  style="padding-top: 50px">
        <img  style="padding-top:40px"src="https://static.wixstatic.com/media/bf402c_80ca5fdf2c894db1b0a8c7551eba8e93~mv2.png/v1/fill/w_314,h_120,al_c,lg_1,q_80/NetPro%20logo.webp" height="100px" width="180px">
        <p style="padding-top:70px;font-size: 20px;color:#85C7F2;font-family: Open Sans, Helvetica, Arial, sans-serif;
        ">Thank you for working with Us!</p>
      </div>
-     <div class="col-md-4" >
+     <div class="col-md-4" style="padding-top: 70px" >
      <h2 style="color:white">HEAD OFFICE</h2>
 
       
@@ -47,11 +48,13 @@
       <p style="color:#F3F7F0;font-size: 15px;line-height: 24px">Website: netproltd.com</p>
       
      </div>
-     <div class="col-md-4" style="padding-top: 70px;font-family: 'Open Sans', sans-serif;">
+     <div class="col-md-4" style="padding-top: 90px;font-family: 'Open Sans', sans-serif;">
         <p style="color:#F3F7F0"><a href="{% url 'welcome' %}">Home</a></p>
        <p style="color:#F3F7F0"><a href="{% url 'home' %}"> About Us</a></p>
        <p style="color:#F3F7F0"><a href="{% url 'security' %}">Security Solutions</a></p>
        <p style="color:#F3F7F0"><a href="{% url 'project' %}">Projects</a></p>
+       <p style="color:#F3F7F0"><a href="{% url 'contact' %}">Contact Us</a></p>
+       
        
        
      </div>
